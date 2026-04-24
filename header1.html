@@ -10,109 +10,95 @@ body {
   background: #f4f4f4;
 }
 
-/* HEADER MAIN (Width reduced more) */
+/* COMPACT HEADER */
 .header {
-  max-width: 950px; /* width aur kam */
-  margin: 20px auto;
-  border-radius: 12px;
+  max-width: 950px;
+  height: 170px; /* approx 2.5 inch */
+  margin: 15px auto;
+  border-radius: 10px;
   overflow: hidden;
 
-  background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+  background: linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
               url('https://images.unsplash.com/photo-1589394815804-964ed0be2eb5');
+
   background-size: cover;
   background-position: center;
-  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 
-/* TOP CONTENT */
-.top-content {
-  padding-top: 10px; /* sirf thoda gap (1/2 cm approx) */
-  padding-bottom: 20px;
+/* LEFT SIDE (TEXT) */
+.left {
+  width: 55%;
 }
 
 /* FIRM NAME */
-.top-content h1 {
+.left h1 {
   margin: 0;
-  font-size: 38px;
+  font-size: 26px;
   color: #2c3e50;
 }
 
 /* TAGLINES */
 .line1 {
-  font-size: 20px;
+  font-size: 14px;
   color: #1a5276;
   font-weight: bold;
-  margin-top: 10px;
 }
 
 .line2 {
-  font-size: 16px;
+  font-size: 12px;
   color: #555;
-  margin-top: 5px;
 }
 
 /* BUTTON */
 .btn {
-  margin-top: 15px;
-  padding: 10px 22px;
+  margin-top: 6px;
+  padding: 6px 14px;
   background: #b7950b;
   color: white;
   border: none;
-  border-radius: 25px;
-  font-size: 15px;
+  border-radius: 20px;
+  font-size: 12px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.btn:hover {
-  background: #7d6608;
-}
-
-/* DIVIDER LINE */
-.divider {
-  width: 80%;
-  height: 2px;
-  background: linear-gradient(to right, transparent, #b7950b, transparent);
-  margin: 15px auto;
+/* RIGHT SIDE TEAM */
+.right {
+  width: 45%;
+  text-align: center;
 }
 
 /* TEAM TITLE */
 .team-title {
+  font-size: 12px;
   font-weight: bold;
   color: #2c3e50;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-/* EXPERTS SECTION */
+/* PHOTOS ROW */
 .experts {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  padding-bottom: 0;
+  gap: 10px;
 }
 
-/* IMAGES TOUCH BORDER */
+/* SMALL IMAGES */
 .experts img {
-  width: 100px;
-  height: 100px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
-  border: 3px solid #b7950b;
+  border: 2px solid #b7950b;
   object-fit: cover;
   transition: 0.3s;
 }
 
 .experts img:hover {
   transform: scale(1.1);
-}
-
-.expert-name {
-  font-size: 13px;
-  margin-top: 5px;
-}
-
-/* BOTTOM ALIGN */
-.team-section {
-  padding-bottom: 5px;
 }
 
 </style>
@@ -122,52 +108,27 @@ body {
 
 <div class="header">
 
-  <div class="top-content">
-
+  <!-- LEFT -->
+  <div class="left">
     <h1>⚖️ The Esperer</h1>
-
     <div class="line1">Expert Legal Solutions</div>
-
     <div class="line2">
       Professional, ethical & result-driven legal services
     </div>
 
     <button class="btn">Consult Now</button>
-
   </div>
 
-  <!-- DESIGN LINE -->
-  <div class="divider"></div>
-
-  <!-- TEAM -->
-  <div class="team-section">
-
+  <!-- RIGHT -->
+  <div class="right">
     <div class="team-title">Our Team</div>
 
     <div class="experts">
-
-      <div>
-        <img src="https://randomuser.me/api/portraits/women/44.jpg">
-        <div class="expert-name">Adv. Asha Tiwari</div>
-      </div>
-
-      <div>
-        <img src="https://randomuser.me/api/portraits/men/32.jpg">
-        <div class="expert-name">Legal Expert</div>
-      </div>
-
-      <div>
-        <img src="https://randomuser.me/api/portraits/men/45.jpg">
-        <div class="expert-name">Senior Advocate</div>
-      </div>
-
-      <div>
-        <img src="https://randomuser.me/api/portraits/women/68.jpg">
-        <div class="expert-name">Consultant</div>
-      </div>
-
+      <img src="https://randomuser.me/api/portraits/women/44.jpg">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg">
+      <img src="https://randomuser.me/api/portraits/men/45.jpg">
+      <img src="https://randomuser.me/api/portraits/women/68.jpg">
     </div>
-
   </div>
 
 </div>
