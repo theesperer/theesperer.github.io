@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Services - The Esperer</title>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+/* SECTION */
+.section {
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #1a5276;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 220px;
+  background: #f8f9f9;
+  padding: 18px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #eaf2f8;
+}
+
+/* TITLE */
+.card h3 {
+  color: #1a5276;
+}
+
+/* TEXT */
+.card p {
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER AUTO LOAD -->
+<div id="header"></div>
+
+<script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
+
+<!-- SERVICES SECTION -->
+<section class="section">
+
+<h2>Practice Areas</h2>
+
+<div class="cards">
+
+  <div class="card">
+    <h3>Civil Law</h3>
+    <p>Property disputes, contracts, civil litigation matters.</p>
+  </div>
+
+  <div class="card">
+    <h3>Criminal Law</h3>
+    <p>Bail matters, defense cases, criminal representation.</p>
+  </div>
+
+  <div class="card">
+    <h3>Family Law</h3>
+    <p>Divorce, maintenance, child custody and related issues.</p>
+  </div>
+
+  <div class="card">
+    <h3>Consumer Law</h3>
+    <p>Consumer disputes, complaints and compensation cases.</p>
+  </div>
+
+  <div class="card">
+    <h3>Labour Law</h3>
+    <p>Employee disputes, labour court matters and compliance.</p>
+  </div>
+
+  <div class="card">
+    <h3>Banking & DRT</h3>
+    <p>Debt recovery, banking disputes and financial cases.</p>
+  </div>
+
+</div>
+
+</section>
+
+</body>
+</html>
