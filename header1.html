@@ -10,10 +10,9 @@ body {
   background: #f4f4f4;
 }
 
-/* COMPACT HEADER */
+/* MAIN HEADER */
 .header {
   max-width: 950px;
-  height: 170px; /* approx 2.5 inch */
   margin: 15px auto;
   border-radius: 10px;
   overflow: hidden;
@@ -23,82 +22,80 @@ body {
 
   background-size: cover;
   background-position: center;
+  padding: 10px 15px;
+}
 
+/* FLEX ROW */
+.row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
 }
 
-/* LEFT SIDE (TEXT) */
-.left {
-  width: 55%;
-}
-
-/* FIRM NAME */
-.left h1 {
-  margin: 0;
-  font-size: 26px;
-  color: #2c3e50;
-}
-
-/* TAGLINES */
-.line1 {
-  font-size: 14px;
-  color: #1a5276;
-  font-weight: bold;
-}
-
-.line2 {
-  font-size: 12px;
-  color: #555;
-}
-
-/* BUTTON */
-.btn {
-  margin-top: 6px;
-  padding: 6px 14px;
-  background: #b7950b;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-/* RIGHT SIDE TEAM */
-.right {
-  width: 45%;
-  text-align: center;
-}
-
-/* TEAM TITLE */
-.team-title {
-  font-size: 12px;
-  font-weight: bold;
-  color: #2c3e50;
-  margin-bottom: 5px;
-}
-
-/* PHOTOS ROW */
-.experts {
+/* SIDE PHOTOS */
+.side {
+  width: 20%;
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-around;
 }
 
-/* SMALL IMAGES */
-.experts img {
+.side img {
   width: 55px;
   height: 55px;
   border-radius: 50%;
   border: 2px solid #b7950b;
   object-fit: cover;
+}
+
+/* CENTER TEXT */
+.center {
+  width: 60%;
+  text-align: center;
+}
+
+/* LINE 1 - FIRM NAME */
+.line1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0 40px; /* approx 1.5 inch feel */
+}
+
+/* LINE 2 */
+.line2 {
+  font-size: 14px;
+  color: #1a5276;
+  margin: 0 25px; /* approx 1 inch */
+}
+
+/* LINE 3 */
+.line3 {
+  font-size: 11px;
+  font-weight: bold;
+  color: #b03a2e;
+  margin-top: 3px;
+}
+
+/* NAVBAR */
+.nav {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.nav a {
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 13px;
+  color: #2c3e50;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 15px;
   transition: 0.3s;
 }
 
-.experts img:hover {
-  transform: scale(1.1);
+.nav a:hover {
+  background: #b7950b;
+  color: white;
 }
 
 </style>
@@ -108,27 +105,42 @@ body {
 
 <div class="header">
 
-  <!-- LEFT -->
-  <div class="left">
-    <h1>⚖️ The Esperer</h1>
-    <div class="line1">Expert Legal Solutions</div>
-    <div class="line2">
-      Professional, ethical & result-driven legal services
-    </div>
+  <div class="row">
 
-    <button class="btn">Consult Now</button>
-  </div>
-
-  <!-- RIGHT -->
-  <div class="right">
-    <div class="team-title">Our Team</div>
-
-    <div class="experts">
+    <!-- LEFT PHOTOS -->
+    <div class="side">
       <img src="https://randomuser.me/api/portraits/women/44.jpg">
       <img src="https://randomuser.me/api/portraits/men/32.jpg">
+    </div>
+
+    <!-- CENTER TEXT -->
+    <div class="center">
+
+      <div class="line1">⚖️ The Esperer ⚖️</div>
+
+      <div class="line2">Expert Legal Solutions</div>
+
+      <div class="line3">
+        (Professional, ethical & result-driven legal services)
+      </div>
+
+    </div>
+
+    <!-- RIGHT PHOTOS -->
+    <div class="side">
       <img src="https://randomuser.me/api/portraits/men/45.jpg">
       <img src="https://randomuser.me/api/portraits/women/68.jpg">
     </div>
+
+  </div>
+
+  <!-- NAVIGATION -->
+  <div class="nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Achievements</a>
+    <a href="#">Contact</a>
   </div>
 
 </div>
