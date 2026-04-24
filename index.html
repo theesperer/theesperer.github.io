@@ -12,88 +12,62 @@ body {
   background: #f4f4f4;
 }
 
-/* COMMON SECTION STYLE */
+/* SECTION */
 .section {
   max-width: 900px;
   margin: 20px auto;
   background: white;
-  padding: 25px;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 h2 {
-  text-align: center;
   color: #1a5276;
 }
 
-/* LIST */
-ul {
-  line-height: 1.8;
-  font-size: 15px;
+/* HERO TEXT */
+.hero-text {
+  font-size: 18px;
   font-weight: 600;
   color: #2c3e50;
+  line-height: 1.8;
 }
 
-/* CARDS */
-.cards {
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background: #1a5276;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #154360;
+}
+
+/* HIGHLIGHTS */
+.highlights {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
   justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-.card {
+.box {
   flex: 1 1 200px;
   background: #f8f9f9;
   padding: 15px;
   border-radius: 8px;
-  text-align: center;
   border: 1px solid #ddd;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  background: #eaf2f8;
-}
-
-/* CONTACT */
-.contact-box {
-  text-align: center;
-  line-height: 1.8;
   font-weight: 600;
-}
-
-/* FORM */
-form input, form textarea {
-  width: 90%;
-  padding: 10px;
-  margin: 8px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-form button {
-  padding: 10px 20px;
-  background: #1a5276;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background: #154360;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #1a5276;
-  color: white;
-  margin-top: 20px;
 }
 
 </style>
@@ -113,69 +87,37 @@ fetch("header.html")
   });
 </script>
 
-<!-- ABOUT PREVIEW -->
+<!-- HERO SECTION -->
 <section class="section">
-<h2>About Advocate</h2>
 
-<ul>
-<li>A dynamic Legal Professional with over 8 years of rich & extensive experience in handling Legal Affairs.</li>
-<li>Expert in legal consultancy, drafting & court representation.</li>
-<li>Registered with the Bar Council of UP.</li>
-</ul>
+<h2>Welcome to The Esperer</h2>
+
+<p class="hero-text">
+Providing trusted legal solutions with professionalism, integrity and result-oriented approach.  
+We stand committed to protecting your rights and delivering justice.
+</p>
+
+<!-- ACTION BUTTONS -->
+<a href="about.html" class="btn">Know More</a>
+<a href="contact.html" class="btn">Consult Now</a>
 
 </section>
 
-<!-- SERVICES -->
+<!-- QUICK HIGHLIGHTS -->
 <section class="section">
-<h2>Practice Areas</h2>
 
-<div class="cards">
-  <div class="card"><h3>Civil Law</h3><p>Property disputes, contracts</p></div>
-  <div class="card"><h3>Criminal Law</h3><p>Bail & defense</p></div>
-  <div class="card"><h3>Family Law</h3><p>Divorce & custody</p></div>
-  <div class="card"><h3>Consumer Law</h3><p>Consumer disputes</p></div>
-</div>
+<h2>Why Choose Us</h2>
 
-</section>
+<div class="highlights">
 
-<!-- ACHIEVEMENTS -->
-<section class="section">
-<h2>Achievements</h2>
-
-<ul>
-<li>Gold Medalist – B.A., Lucknow University (2014)</li>
-<li>Gold Medalist – LL.B., Lucknow University (2017)</li>
-<li>Best Student Reading in Law (2016)</li>
-<li>Best Cadet of Uttar Pradesh – NCC (2013)</li>
-</ul>
-
-</section>
-
-<!-- CONTACT -->
-<section class="section">
-<h2>Contact</h2>
-
-<div class="contact-box">
-<p>📞 +91- 8299003529</p>
-<p>📞 +91- 9794810005</p>
-<p>📍 Lucknow, Uttar Pradesh</p>
-<p>📧 theesperer@gmail.com</p>
-
-<form action="https://formspree.io/f/mvzdwnwe" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
+  <div class="box">✔ 8+ Years Experience</div>
+  <div class="box">✔ Court Representation</div>
+  <div class="box">✔ Legal Drafting Expertise</div>
+  <div class="box">✔ Trusted Consultancy</div>
 
 </div>
 
 </section>
-
-<!-- FOOTER -->
-<footer>
-<p>© 2026 Advocate Asha | All Rights Reserved</p>
-</footer>
 
 </body>
 </html>
