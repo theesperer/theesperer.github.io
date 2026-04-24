@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Achievements - The Esperer</title>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+/* SECTION */
+.section {
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #1a5276;
+}
+
+/* LIST */
+ul {
+  line-height: 1.8;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* LIST STYLE */
+ul li {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-left: 4px solid #8A0303; /* blood red highlight */
+  background: #f8f9f9;
+  border-radius: 4px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER AUTO LOAD -->
+<div id="header"></div>
+
+<script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
+
+<!-- ACHIEVEMENTS SECTION -->
+<section class="section">
+
+<h2>Achievements</h2>
+
+<ul>
+<li>Gold Medalist – B.A., Lucknow University (2014)</li>
+
+<li>Gold Medalist – LL.B., Lucknow University (2017)</li>
+
+<li>Best Student Reading in Law (2016)</li>
+
+<li>Best Cadet of Uttar Pradesh – NCC (2013)</li>
+
+<li>Experience before District, State & National Consumer Forums</li>
+
+<li>Handled cases in Housing, Insurance, Banking, Medical Negligence etc.</li>
+</ul>
+
+</section>
+
+</body>
+</html>
