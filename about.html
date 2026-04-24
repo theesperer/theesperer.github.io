@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Advocate - The Esperer</title>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+/* MAIN CONTAINER */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* HEADING */
+h2 {
+  text-align: center;
+  color: #1a5276;
+}
+
+/* IMAGE */
+.profile {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #1a5276;
+  object-fit: cover;
+}
+
+/* TEXT */
+.content {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* POINTS */
+.points {
+  margin-top: 15px;
+}
+
+.points li {
+  margin-bottom: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER AUTO LOAD -->
+<div id="header"></div>
+
+<script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <h2>About Advocate</h2>
+
+  <!-- PHOTO -->
+  <div class="profile">
+    <img src="data:image/jpeg;base64,PUT-YOUR-BASE64-CODE-HERE">
+  </div>
+
+  <!-- TEXT -->
+  <div class="content">
+
+    <p>
+      A dynamic Legal Professional with over 8 years of rich & extensive experience in handling Legal Affairs.
+    </p>
+
+    <p>
+      A result-oriented professional with expertise in providing legal consultancy services; managing legal issues; drafting legal / commercial documents & representing clients before courts, tribunals as well as regulatory authorities.
+    </p>
+
+    <ul class="points">
+      <li>In-depth knowledge of laws with strong ability to interpret legal issues and foresee possible outcomes.</li>
+      <li>An effective communicator with excellent relationship management skills.</li>
+      <li>Registered with the Bar Council of UP.</li>
+      <li>Handling cases at Consumer Commission, Labour Court, DRT and High Court Lucknow Bench.</li>
+    </ul>
+
+  </div>
+
+</div>
+
+</body>
+</html>
