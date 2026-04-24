@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* HEADER CONTAINER (Width reduced) */
+.header {
+  max-width: 1100px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+
+  /* LIGHT OVERLAY + LADY JUSTICE IMAGE */
+  background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+              url('https://images.unsplash.com/photo-1589394815804-964ed0be2eb5');
+
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* FIRM NAME */
+.header h1 {
+  font-size: 40px;
+  margin: 10px 0;
+  color: #2c3e50;
+  letter-spacing: 2px;
+}
+
+/* TAGLINE */
+.header p {
+  font-size: 18px;
+  font-style: italic;
+  color: #b7950b;
+}
+
+/* EXPERTS SECTION */
+.experts {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.experts img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid #b7950b;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.experts img:hover {
+  transform: scale(1.1);
+}
+
+.expert-name {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+  <h1>⚖️ The Esperer ⚖️</h1>
+
+  <p>"Your Voice. Our Legal Strength."</p>
+
+  <div class="experts">
+
+    <div>
+      <img src="https://randomuser.me/api/portraits/women/44.jpg">
+      <div class="expert-name">Adv. Asha Tiwari</div>
+    </div>
+
+    <div>
+      <img src="https://randomuser.me/api/portraits/men/32.jpg">
+      <div class="expert-name">Legal Expert</div>
+    </div>
+
+    <div>
+      <img src="https://randomuser.me/api/portraits/men/45.jpg">
+      <div class="expert-name">Senior Advocate</div>
+    </div>
+
+    <div>
+      <img src="https://randomuser.me/api/portraits/women/68.jpg">
+      <div class="expert-name">Consultant</div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
