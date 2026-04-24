@@ -27,7 +27,7 @@ body {
   padding: 12px;
 }
 
-/* MAIN ROW */
+/* ROW */
 .row {
   display: flex;
   align-items: center;
@@ -49,71 +49,77 @@ body {
   object-fit: cover;
 }
 
-/* CENTER TEXT */
+/* CENTER */
 .center {
   width: 60%;
   text-align: center;
 }
 
-/* LINE 1 */
+/* LINE 1 (BLUE BACKGROUND) */
 .line1 {
-  font-size: 42px; /* 1.5x */
+  font-size: 42px;
   font-weight: bold;
-  color: #1b2631;
+  color: white;
+
+  background: #1a5276; /* Blue background */
+  padding: 5px 0;
+  border-radius: 6px;
 
   letter-spacing: 6px;
   word-spacing: 25px;
-
-  width: 100%;
 }
 
-/* LINE 2 */
+/* LINE 2 (DARK BLUE) */
 .line2 {
   font-size: 21px;
-  color: #1a5276;
+  color: #0b3c5d; /* dark blue */
+
+  margin-top: 5px;
 
   letter-spacing: 2px;
   word-spacing: 10px;
-
-  width: 100%;
 }
 
-/* LINE 3 */
+/* LINE 3 (DARK RED BOLD) */
 .line3 {
   font-size: 11px;
   font-weight: bold;
-  color: #b03a2e;
+  color: #8b0000; /* dark red */
 
   margin-top: 3px;
 }
 
-/* NAV BAR */
+/* NAV */
 .nav {
   margin-top: 12px;
   display: flex;
   gap: 8px;
 }
 
-/* BUTTON STYLE */
+/* BUTTON STYLE (LIGHT & CLEAN) */
 .nav a {
   flex: 1;
   text-align: center;
 
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
 
   padding: 10px 0;
 
-  color: white;
-  background: linear-gradient(135deg, #1a5276, #2c3e50);
+  color: #2c3e50;
+  background: #d6eaf8; /* light blue */
 
   border-radius: 8px;
+  border: 1px solid #aed6f1;
+
   transition: 0.3s;
 }
 
+/* HOVER */
 .nav a:hover {
-  background: linear-gradient(135deg, #b7950b, #7d6608);
+  background: #5dade2;
+  color: white;
 }
 
 </style>
@@ -125,13 +131,13 @@ body {
 
   <div class="row">
 
-    <!-- LEFT PHOTOS -->
+    <!-- LEFT -->
     <div class="side">
       <img src="https://randomuser.me/api/portraits/women/44.jpg">
       <img src="https://randomuser.me/api/portraits/men/32.jpg">
     </div>
 
-    <!-- CENTER TEXT -->
+    <!-- CENTER -->
     <div class="center">
 
       <div class="line1">⚖️ The Esperer ⚖️</div>
@@ -144,7 +150,7 @@ body {
 
     </div>
 
-    <!-- RIGHT PHOTOS -->
+    <!-- RIGHT -->
     <div class="side">
       <img src="https://randomuser.me/api/portraits/men/45.jpg">
       <img src="https://randomuser.me/api/portraits/women/68.jpg">
