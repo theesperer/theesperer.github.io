@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>The Esperer Header</title>
+
 <style>
 
 body {
@@ -10,7 +12,7 @@ body {
   background: #f4f4f4;
 }
 
-/* MAIN HEADER */
+/* HEADER */
 .header {
   max-width: 950px;
   margin: 15px auto;
@@ -22,10 +24,10 @@ body {
 
   background-size: cover;
   background-position: center;
-  padding: 10px 15px;
+  padding: 12px;
 }
 
-/* FLEX ROW */
+/* MAIN ROW */
 .row {
   display: flex;
   align-items: center;
@@ -40,8 +42,8 @@ body {
 }
 
 .side img {
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 2px solid #b7950b;
   object-fit: cover;
@@ -53,19 +55,27 @@ body {
   text-align: center;
 }
 
-/* LINE 1 - FIRM NAME */
+/* LINE 1 */
 .line1 {
-  font-size: 28px;
+  font-size: 42px; /* 1.5x */
   font-weight: bold;
-  color: #2c3e50;
-  margin: 0 40px; /* approx 1.5 inch feel */
+  color: #1b2631;
+
+  letter-spacing: 6px;
+  word-spacing: 25px;
+
+  width: 100%;
 }
 
 /* LINE 2 */
 .line2 {
-  font-size: 14px;
+  font-size: 21px;
   color: #1a5276;
-  margin: 0 25px; /* approx 1 inch */
+
+  letter-spacing: 2px;
+  word-spacing: 10px;
+
+  width: 100%;
 }
 
 /* LINE 3 */
@@ -73,29 +83,37 @@ body {
   font-size: 11px;
   font-weight: bold;
   color: #b03a2e;
+
   margin-top: 3px;
 }
 
-/* NAVBAR */
+/* NAV BAR */
 .nav {
-  margin-top: 10px;
-  text-align: center;
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
 }
 
+/* BUTTON STYLE */
 .nav a {
+  flex: 1;
+  text-align: center;
+
   text-decoration: none;
-  margin: 0 10px;
-  font-size: 13px;
-  color: #2c3e50;
+  font-size: 16px;
   font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 15px;
+
+  padding: 10px 0;
+
+  color: white;
+  background: linear-gradient(135deg, #1a5276, #2c3e50);
+
+  border-radius: 8px;
   transition: 0.3s;
 }
 
 .nav a:hover {
-  background: #b7950b;
-  color: white;
+  background: linear-gradient(135deg, #b7950b, #7d6608);
 }
 
 </style>
