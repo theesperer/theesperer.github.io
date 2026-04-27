@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Meet Our Team - The Esperer</title>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+/* SECTION */
+.section {
+  max-width: 1100px;
+  margin: 20px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #1a5276;
+}
+
+/* TEAM CONTAINER */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* CARD */
+.team-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.team-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  border: 3px solid #1a5276;
+  object-fit: cover;
+}
+
+/* TEXT */
+.team-card h3 {
+  margin: 10px 0 5px;
+  color: #1a5276;
+}
+
+.role {
+  font-weight: bold;
+  color: #b7950b;
+}
+
+ul {
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 18px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
+
+<!-- TEAM SECTION -->
+<section class="section">
+
+<h2>Meet Our Team</h2>
+
+<div class="team-container">
+
+  <!-- MEMBER 1 -->
+  <div class="team-card">
+    <img src="images/member1.jpg" alt="Member">
+    <h3>Asha Tiwari</h3>
+    <p class="role">Managing Director, The Esperer</p>
+
+    <ul>
+      <li>8+ years experience in Legal Affairs</li>
+      <li>Expert in Court Representation</li>
+      <li>Gold Medalist in Law</li>
+    </ul>
+  </div>
+
+  <!-- MEMBER 2 -->
+  <div class="team-card">
+    <img src="images/member2.jpg" alt="Member">
+    <h3>Rahul Sharma</h3>
+    <p class="role">Legal Expert</p>
+
+    <ul>
+      <li>Specialist in Corporate Law</li>
+      <li>Drafting & Documentation Expert</li>
+      <li>Strong client handling skills</li>
+    </ul>
+  </div>
+
+  <!-- MEMBER 3 -->
+  <div class="team-card">
+    <img src="images/member3.jpg" alt="Member">
+    <h3>Neha Singh</h3>
+    <p class="role">Legal Associate</p>
+
+    <ul>
+      <li>Consumer & Labour Court cases</li>
+      <li>Legal Research Specialist</li>
+      <li>Excellent communication skills</li>
+    </ul>
+  </div>
+
+</div>
+
+</section>
+
+</body>
+</html>
